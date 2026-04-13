@@ -53,10 +53,11 @@
                     <h2>Let's Connect</h2>
                     <p>Ready to launch? Drop us a line and let's talk about your vision.</p>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <textarea placeholder="Tell us about your project..." rows="5"></textarea>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="2ffb24ce-1350-4fc6-ba30-de4d03e30291">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <textarea name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
                     <button type="submit" class="btn-submit">Send Message</button>
                 </form>
             </div>
